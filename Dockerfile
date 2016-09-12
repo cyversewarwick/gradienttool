@@ -17,6 +17,9 @@ RUN pip install cython numpy scipy matplotlib pandas seaborn
 # this needs to be separate as the primadonna of a package needs to see numpy installed
 RUN pip install GPy
 
+#apparently now this needs installation too. just gonna do this at the end just in case
+RUN apt-get -y install python3-tk
+
 # set up code
 RUN mkdir /scripts
 COPY scripts/ /scripts/
