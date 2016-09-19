@@ -7,8 +7,6 @@ import re
 
 import numpy as np
 import scipy as sp
-#for some reason, it doesn't see scipy.stats. no idea.
-import scipy.stats as sps
 
 import shared as ip2
 import gradienttool as gt
@@ -49,10 +47,6 @@ def main(args=None):
     # part of a number and convert into a NumPy matrix
     time = np.asarray([re.sub('[^0-9.]','',x) for x in inp.colnames],
                       dtype=np.float64)
-
-    #ugly normalisation as the code goes ape on non-0-mean data otherwise. Sam, why.
-    if op.normalise:
-        inp.data = sps.mstats.zscore(inp.data,axis=1,ddof=1)
 
     if op.normalise:
         xtrans = (min(time), max(time)-min(time))
