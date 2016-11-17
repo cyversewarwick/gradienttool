@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+cp /analysis_crash/WhyDidTheAnalysisCrash.txt .
+
 #mark start
 sleep 5
 touch tempfile
@@ -12,3 +14,4 @@ python3 /scripts/__main__.py -o out.csv -p out.pdf "${@:1}"
 #wrap up output and kick out tempfile
 find . -mindepth 1 -newer tempfile -exec tar -rf FullOutput.tar {} \;
 rm tempfile
+rm WhyDidTheAnalysisCrash.txt

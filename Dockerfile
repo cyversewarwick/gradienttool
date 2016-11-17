@@ -23,4 +23,9 @@ RUN apt-get -y install python3-tk
 # set up code
 RUN mkdir /scripts
 COPY scripts/ /scripts/
+
+#set up analysis crash text file
+RUN apt-get -y install git
+RUN git clone https://github.com/cyversewarwick/analysis_crash.git
+
 ENTRYPOINT ["bash", "/scripts/gradienttool_tarwrapper.sh"]
