@@ -14,7 +14,7 @@ The gradient tool begins by fitting a Gaussian process to all of the data for a 
 
 ## Test Run
 
-If you want to get a feel for input and output formatting, basic demo data is provided at `cyverseuk/gradienttool_testdata/input.csv` under Community Data.
+If you want to get a feel for input and output formatting, basic demo data is provided at `iplantcollaborative/example_data/cyverseuk/gradienttool_testdata/input.csv` under Community Data.
 
 ## Input In Detail
 
@@ -48,7 +48,7 @@ The gradient tool output, while comprehensive, could use a more concise form whe
 
 ## Test Run
 
-If you want to see what the output of this helper app looks like, you can find the test data at `cyverseuk/gradienttool_filter_testdata/out.csv` under Community Data. `out.pdf` is also provided to give a complete set of gradient tool outputs and a visual feel of the fits, but it's not to be used on input by the app.
+If you want to see what the output of this helper app looks like, you can find the test data at `iplantcollaborative/example_data/cyverseuk/gradienttool_filter_testdata/out.csv` under Community Data. `out.pdf` is also provided to give a complete set of gradient tool outputs and a visual feel of the fits, but it's not to be used on input by the app.
 
 ## Input
 
